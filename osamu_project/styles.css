@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    padding-bottom: 60px; /* Отступ снизу для футера */
+}
+
+header {
+    background-color: #2e8b57; /* Тёмно-зелёный цвет */
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-item {
+    background-color: #fff;
+    border: 1px solid #bbb; /* Тёмно-серый цвет */
+    padding: 10px;
+    width: calc((100% - 80px) / 5); /* 5 элементов с 20px промежутком между ними */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3; /* Устанавливаем соотношение сторон 2:3 */
+    margin-bottom: 10px;
+}
+
+.video-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.video-item p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.video-item .description {
+    margin-bottom: 10px;
+}
+
+.video-item .director {
+    margin-bottom: 10px;
+}
+
+.video-item .year {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2e8b57; /* Тёмно-зелёный цвет */
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: -100px; /* Изначально скрыт */
+    transition: bottom 0.5s;
+    z-index: 10;
+}
+
+.footer-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer:hover {
+    bottom: 0;
+}
